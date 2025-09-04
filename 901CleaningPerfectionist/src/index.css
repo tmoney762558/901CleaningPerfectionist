@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-style: normal;
+}
