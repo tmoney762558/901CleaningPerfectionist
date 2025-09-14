@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+* {
+  scroll-behavior: smooth;
+}
+
 .story-script-regular {
   font-family: "Story Script", sans-serif;
   font-style: normal;

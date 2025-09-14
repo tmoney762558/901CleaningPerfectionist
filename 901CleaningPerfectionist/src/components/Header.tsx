@@ -7,14 +7,14 @@ const Header = () => {
   return (
     <header
       id="home"
-      className="flex flex-col items-center w-full h-fit min-h-screen md:p-5 p-2 bg-red-300"
+      className="flex flex-col items-center w-full h-fit min-h-screen md:p-5 p-2 bg-red-400"
     >
       <nav className="flex justify-between items-center w-full max-w-[75rem] py-3 h-fit">
-        <h2 className="text-2xl text-white font-bold story-script-regular">
+        <h2 className="flex-1 text-2xl text-white font-bold story-script-regular">
           901 Cleaning Perfectionist
         </h2>
         {/* We can highlight whichever link has been selected or even highlight them based on scroll position */}
-        <ul className="lg:flex hidden items-center gap-4">
+        <ul className="flex-1 lg:flex hidden justify-center items-center gap-4">
           <a
             className="text-lg text-white font-bold cursor-pointer"
             href="#home"
@@ -26,12 +26,6 @@ const Header = () => {
             href="#about"
           >
             About
-          </a>
-          <a
-            className="text-lg text-white font-bold cursor-pointer"
-            href="#services"
-          >
-            Services
           </a>
           <a
             className="text-lg text-white font-bold cursor-pointer"
@@ -52,7 +46,7 @@ const Header = () => {
           {dropdownOpen ? (
             <ul className="flex flex-col items-center absolute top-10 right-0">
               <a
-                className="w-[7.5rem] py-3 bg-white rounded-t-sm text-center text-lg text-red-300 font-semibold cursor-pointer"
+                className="w-[7.5rem] py-3 bg-white rounded-t-sm text-center text-lg text-red-400 font-semibold cursor-pointer"
                 href="#home"
                 onClick={() => {
                   setDropdownOpen(false);
@@ -61,7 +55,7 @@ const Header = () => {
                 Home
               </a>
               <a
-                className="w-[7.5rem] py-3 bg-white text-center text-lg text-red-300 font-semibold cursor-pointer"
+                className="w-[7.5rem] py-3 bg-white text-center text-lg text-red-400 font-semibold cursor-pointer"
                 href="#about"
                 onClick={() => {
                   setDropdownOpen(false);
@@ -70,16 +64,7 @@ const Header = () => {
                 About
               </a>
               <a
-                className="w-[7.5rem] py-3 bg-white text-center text-lg text-red-300 font-semibold cursor-pointer"
-                href="#services"
-                onClick={() => {
-                  setDropdownOpen(false);
-                }}
-              >
-                Services
-              </a>
-              <a
-                className="w-[7.5rem] py-3 bg-white rounded-b-sm text-center text-lg text-red-300 font-semibold cursor-pointer"
+                className="w-[7.5rem] py-3 bg-white rounded-b-sm text-center text-lg text-red-400 font-semibold cursor-pointer"
                 href="#contact"
                 onClick={() => {
                   setDropdownOpen(false);
@@ -90,9 +75,11 @@ const Header = () => {
             </ul>
           ) : null}
         </div>
-        <a className="lg:block hidden py-2 px-6 bg-white rounded-sm text-lg text-red-300 font-bold cursor-pointer">
-          Get a Quote
-        </a>
+        <div className="flex-1 lg:flex hidden justify-end">
+          <a className=" py-2 px-6 bg-white rounded-sm text-lg text-red-400 font-bold cursor-pointer">
+            Get a Quote
+          </a>
+        </div>
       </nav>
       <div className="flex-1 flex lg:flex-row flex-col justify-center items-center lg:gap-[5rem] gap-[3rem] w-full max-w-[75rem] lg:mt-0 mt-5">
         <div className="lg:flex-1 flex flex-col lg:items-start items-center">
@@ -104,7 +91,7 @@ const Header = () => {
             voluptatem, harum dicta facilis, quaerat ducimus ullam explicabo
             error reiciendis, molestiae voluptate.
           </p>
-          <button className="mt-[2rem] py-2 px-6 bg-white rounded-md text-lg text-red-300 font-bold">
+          <button className="mt-[2rem] py-2 px-6 bg-white rounded-md text-lg text-red-400 font-bold">
             <p>Learn More</p>
           </button>
         </div>
